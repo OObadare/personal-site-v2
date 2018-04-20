@@ -6,12 +6,54 @@ stormy greyple: #494E6b
 Cloudy beige: #98878F
 Sunset... mauve? #985E6D
 Evening bluke: #192231 */
-body {
-  background-color: #f5f5f5;
+
+html{
+  height: 100%;
 }
 
+body {
+  margin: 0;
+  height: 100%;
+  background-color: #f5f5f5;
+  display: flex;
+}
 
-div {
-  background-color: red;
-  /* color: red; */
+.left-div {
+  width: 350px;
+}
+
+#palette {
+  display: flex;
+}
+
+#palette > span {
+  flex-grow: 1;
+}
+
+span {
+  color: white;
+}
+
+#stormy {
+  background-color: #494E6b;
+}
+
+#cloudy {
+  background-color: #98878F;
+}
+
+#sunset {
+  background-color: #985E6D;
+}
+
+#evening {
+  background-color: #192231;
+}
+
+h2 {
+  position: relative;
+  height: 200px;
+  background-image: url("../images/PP-Windows.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
