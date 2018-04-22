@@ -19,7 +19,12 @@ body {
 }
 
 .left-div {
-  width: 350px;
+  flex-grow: 1;
+  background-color: #98878f;
+}
+
+.right-div {
+  flex-grow: 7;
 }
 
 #palette {
