@@ -15,20 +15,46 @@ body {
   margin: 0;
   height: 100%;
   background-color: #f5f5f5;
-  display: flex;
+  font-family: 'Nunito', sans-serif;
+}
+
+@media screen and (min-width : 768px) {
+  body {
+    display: flex;
+  }
+
+  .left-div {
+    width: 30%;
+  }
+
+  .right-div {
+    width: 70%;
+  }
+
 }
 
 .left-div {
-  flex-grow: 1;
+  text-align: center;
   background-color: #98878f;
+
+}
+
+.left-div p {
+  color: white;
 }
 
 .right-div {
-  flex-grow: 5;
+  background-image: url("../images/PP-Windows.jpg");
+  background-size: cover;
+  background-position: center;
+  /* flex-grow: 5; */
 }
 
 #headshot {
   border-radius: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 #palette {
@@ -62,7 +88,18 @@ span {
 h2 {
   position: relative;
   height: 200px;
-  background-image: url("../images/PP-Windows.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.brief-about {
+  overflow-wrap: normal;
+}
+
+.in-depth-about {
+  background-color: #192231;
+  width: 90%;
+  display: block;
+  margin: auto;
+
 }
