@@ -25,10 +25,13 @@ body {
 
   .left-div {
     width: 30%;
+    height: 100%;
+    /* position: fixed; */
   }
 
   .right-div {
     width: 70%;
+    height: 100%;
   }
 
 }
@@ -48,6 +51,15 @@ body {
   background-size: cover;
   background-position: center;
   /* flex-grow: 5; */
+}
+
+.right-div > section {
+    opacity: .9;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
 }
 
 #headshot {
@@ -96,12 +108,30 @@ h2 {
   overflow-wrap: normal;
 }
 
+
 .in-depth-about {
   color: white;
-  opacity: .7;
   background-color: #192231;
-  width: 90%;
-  display: block;
-  margin: auto;
+}
 
+.in-depth-about p {
+  line-height: 1.2;
+  max-width: 50ch;
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* technology section */
+
+.technology-icons {
+  background-color: #98878F;
+}
+
+.technology-icons > img {
+  padding: 10px;
+  max-width: 25%;
+  max-height: 25%;
 }
