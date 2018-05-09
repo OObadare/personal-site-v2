@@ -35,7 +35,7 @@ body {
 
 .left-div {
   text-align: center;
-  background-color: #98878f;
+  background-color: #494E6b;
 
 }
 
@@ -97,6 +97,8 @@ h2 {
 }
 
 .in-depth-about {
+  color: white;
+  opacity: .7;
   background-color: #192231;
   width: 90%;
   display: block;
