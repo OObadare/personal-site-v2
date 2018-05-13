@@ -32,6 +32,9 @@
       </h1>
       <!-- <h2 id ="background-header">stuff</h2> -->
       <section class="in-depth-about">
+        <header class="section-header">
+          WHO I AM
+        </header>
         <p>
           Hi, I'm Dare Ogundipe. I’m a web developer with experience building apps with Rails, React, Javascript and D3, and I recently moved to New York from Texas.
         </p>
@@ -40,15 +43,57 @@
         </p>
       </section>
       <section class="technology-icons">
+        <header class="section-header">
+          WHAT I USE
+        </header>
         <img src="./images/Ruby-icon-2.png" alt="Ruby">
         <img src="./images/RuRails-Icon.png" alt="Ruby on Rails">
-        <img src="./images/mysql-Icon.png" alt="MySQL">
+        <img src="./images/pgsql-icon.png" alt="MySQL">
         <img src="./images/javascript-icon.png" alt="Javascript">
         <img src="./images/React-icon.png" alt="React">
         <img src="./images/redux-icon.png" alt="Redux">
         <img src="./images/D3-icon.png" alt="D3">
       </section>
-      <section class="projects-pictures" ></section>
+      <section class="project-container" >
+        <header class="section-header">
+          WHAT I'VE MADE
+        </header>
+        <ul class ="projects">
+          <li id="madrigal">
+            <section id="madrigal-info">
+              <p> Madrigal is a single page mixtape-making app - perfect for when your throwing arm is a little too weak to get your casette through your crush's window. Built with a Rails backend and a ReactJs frontend, it's a functional clone of 8tracks.com. Go ahead, make a playlist! Or don't, I'm really not the boss of you. I almost certainly don't even know you, actually. </p>
+            </section>
+            <img src="./images/madrigal-screenie.png" alt="madrigal">
+          </li>
+          <li id="wikiwalk">
+            <img src="./images/Wikiwalk-screenie.png" alt="wikiwalk">
+            <section id = "wikiwalk-info">
+              <p> It's a well-known theory* that if you start at a random wikipedia article and continuously hit the first non-italicized, non-parenthesized link, you'll get to the page for Philosophy. This project lets you prove - or, more likely, disprove - this theory. Built using D3, one of JavaScript's premier data visualization libraries, WikiWalk is a visual stroll through Wikipedia.
+              </p>
+              <p>
+                <br>
+                *Citation needed
+              </p>
+            </section>
+          </li>
+        </ul>
+      </section>
+      <section id="contact-section">
+        <header class="section-header">
+          TALK TO ME
+        </header>
+        <aside>
+          <a href="https://www.linkedin.com/in/obadare-ogundipe-a75898125/" target="_blank"><img      src="./images/linkedin-logo.png">
+          </a>
+          <a href="https://github.com/OObadare" target="_blank"><img src="./images/GitHub-Mark-32px.png">
+          </a>
+          <a href="https://angel.co/obadare-ogundipe" target="_blank"><img src="./images/angelist-logo.png">
+          </a>
+        </aside>
+        <div class="email-div">
+          OGUNDIPE.OBADARE@GMAIL.COM
+        </div>
+      </section>
     </div>
   </body>
 </html>

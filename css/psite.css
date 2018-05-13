@@ -37,6 +37,7 @@ body {
   }
 
 }
+/* left div stuff */
 
 .left-div {
   text-align: center;
@@ -47,6 +48,46 @@ body {
 .left-div p {
   color: white;
 }
+
+.name-div {
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 20px;
+}
+
+.name-div::after {
+  content: "";
+  position: inherit;
+  display: block;
+  margin-left: 25%;
+  bottom: 0;
+  width: 50%;
+  height: 1px;
+  border-bottom: 2px solid grey;
+}
+
+.left-div p::after {
+  content: "";
+  position: inherit;
+  display: block;
+  margin-left: 25%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  bottom: 0;
+  width: 50%;
+  height: 1px;
+  border-bottom: 2px solid grey;
+}
+
+#headshot {
+  border-radius: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/*right div stuff */
 
 .right-div {
   background-image: url("../images/PP-Windows.jpg");
@@ -64,12 +105,16 @@ body {
     margin-bottom: 10px;
 }
 
-#headshot {
-  border-radius: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+.right-div header {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  font-weight:600;
+  background-color: #494E6b
 }
+
 
 #palette {
   display: flex;
@@ -138,4 +183,67 @@ h2 {
   padding: 2%;
   width: 20%;
   height: auto;
+}
+
+/*projects section */
+
+
+.project-container {
+  background-color:#985E6D;
+}
+
+
+.projects li img {
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
+  opacity: 1;
+}
+
+.projects li section {
+
+}
+
+@media screen and (min-width : 768px) {
+  .projects > li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+  }
+
+
+
+  .projects li img {
+    width: 49%;
+    height:49%;
+    border: 1px solid grey;
+    padding: .5%;
+  }
+
+}
+
+/* contact me section */
+
+#contact-section {
+  background-color: #192231;
+  color: white;
+}
+
+aside {
+  display: flex;
+  justify-content:space-around;
+}
+
+#contact-section img {
+  height:50px;
+  width: 50px;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid darkgrey;
+  border-radius: 50%;
+}
+
+#contact-section div {
+  text-align:center;
 }
