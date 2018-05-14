@@ -84,7 +84,34 @@ body {
   border-radius: 200px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10px;
   display: block;
+}
+
+/* section links*/
+
+.sectionLinks {
+  margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionLinks a {
+  color: white;
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.sectionLinks a::after {
+  content: "";
+  position: inherit;
+  display: block;
+  margin-left: 37.5%;
+  bottom: 0;
+  width: 25%;
+  height: 1px;
+  border-bottom: 2px solid grey;
 }
 
 /*right div stuff */
@@ -156,12 +183,12 @@ h2 {
 }
 
 
-.in-depth-about {
+#in-depth-about {
   color: white;
   background-color: #192231;
 }
 
-.in-depth-about p {
+#in-depth-about p {
   line-height: 1.2;
   max-width: 50ch;
   text-align: center;
@@ -173,12 +200,11 @@ h2 {
 
 /* technology section */
 
-.technology-icons {
+#technology-icons {
   background-color: #98878F;
 }
 
-.technology-icons > img {
-  /* object-fit: cover; */
+#technology-icons > img {
   vertical-align: middle;
   padding: 2%;
   width: 20%;
@@ -188,7 +214,7 @@ h2 {
 /*projects section */
 
 
-.project-container {
+#project-container {
   background-color:#985E6D;
 }
 
@@ -204,20 +230,63 @@ h2 {
 
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: darkgrey;
+  display: none;
+  /* justify-content: space-between; */
+}
+
 @media screen and (min-width : 768px) {
   .projects > li {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     font-size: 20px;
+  }
+
+  .projects li div {
+    display: flex;
+    justify-content: space-around;
+  }
+
+
+  .projects li .img-container {
+    position: relative;
+    min-width: 49%;
+    min-height:49%;
+    border: 1px solid grey;
+    padding: .5%;
+  }
+
+  .projects li img {
+    width: 100;
+    height:100%;
+  }
+
+  .overlay a {
+    /* margin-left:20%; */
+    margin-top: 20%;
+  }
+
+  .overlay a img {
+    max-height: 90px;
+    width: auto;
   }
 
 
 
-  .projects li img {
-    width: 49%;
-    height:49%;
-    border: 1px solid grey;
-    padding: .5%;
+
+  .img-container:hover .overlay {
+    display: flex;
+    opacity: 1;
   }
 
 }
