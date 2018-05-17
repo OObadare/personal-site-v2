@@ -67,6 +67,10 @@ body {
   border-bottom: 2px solid grey;
 }
 
+.left-div p {
+  font-size: 20px;
+}
+
 .left-div p::after {
   content: "";
   position: inherit;
@@ -101,6 +105,7 @@ body {
   display: inline-block;
   margin-top: 10px;
   text-decoration: none;
+  font-size: 20px;
 }
 
 .sectionLinks a::after {
@@ -112,6 +117,32 @@ body {
   width: 25%;
   height: 1px;
   border-bottom: 2px solid grey;
+}
+
+/* resume stuff */
+
+
+.resume-div {
+  position: inherit;
+  background-color: #192231;
+  color: white;
+  height: 4%;
+  width: 30%;
+  bottom: 0px;
+}
+
+.resume-div a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+
+@media screen and (max-width : 768px) {
+  .resume-div {
+    position: relative;
+    width: 100%;
+  }
+
 }
 
 /*right div stuff */
